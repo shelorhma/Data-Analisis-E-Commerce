@@ -2,28 +2,17 @@
 
 Dashboard analisis data transaksi E-Commerce (2017–2018), termasuk KPI, tren pesanan bulanan, top kategori produk, dan segmentasi pelanggan (RFM).
 
-## Setup Env - Anaconda
-# Buat environment baru
+# Setup Env - Anaconda
 conda create --name main-ds python=3.9
-
-# Aktifkan environment
 conda activate main-ds
-
-# Install dependencies
 pip install -r requirements.txt
 
-## Setup Environment - Shell/Terminal
-# Buat folder proyek
+# Setup Environment - Shell/Terminal
 mkdir proyek_analisis_data
 cd proyek_analisis_data
-
-# Install pipenv dan buat virtual environment
 pipenv install
 pipenv shell
-
-# Install dependencies
 pip install -r requirements.txt
 
-## Run steamlit app
-# Jalankan dashboard
+# Run steamlit app
 streamlit run dashboard.py
