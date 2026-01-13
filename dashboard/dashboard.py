@@ -15,7 +15,10 @@ st.markdown("Analisis transaksi, tren pesanan, dan segmentasi pelanggan")
 # LOAD DATA
 @st.cache_data
 def load_data():
-    df = pd.read_csv("final_df.csv")
+    BASE_DIR = os.path.dirname(__file__)  # folder dashboard/
+    file_path = os.path.join(BASE_DIR, "final_df.csv")  # path ke file CSV
+    df = pd.read_csv(file_path)
+    
     df["order_purchase_timestamp"] = pd.to_datetime(df["order_purchase_timestamp"])
     df["order_year"] = df["order_purchase_timestamp"].dt.year
     df["order_month"] = df["order_purchase_timestamp"].dt.month
