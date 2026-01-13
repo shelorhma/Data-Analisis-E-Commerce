@@ -16,6 +16,8 @@ conda activate main-ds
 # Install dependencies
 pip install -r requirements.txt
 
+## Setup Environment - Shell/Terminal
+
 # Buat folder proyek
 mkdir proyek_analisis_data
 cd proyek_analisis_data
@@ -26,6 +28,8 @@ pipenv shell
 
 # Install dependencies
 pip install -r requirements.txt
+
+## Run steamlit app
 
 # Jalankan dashboard
 streamlit run dashboard.py
